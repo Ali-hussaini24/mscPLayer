@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="icon" href="image/musicPlayer.png">
+    <link rel="stylesheet" href="musicPlayer.css">
+    <script src="https://kit.fontawesome.com/771729e978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="left--nav">
+                    <div class="title--part">
+                        <img src="image/musicPlayer.png" alt="sky" class="title-img">
+                        <h2 class="title">mimpop</h2>
+                    </div>
+                    <ul class="menu--bar"> 
+                        <div class="active-search">
+                            <form action="action-page.php">
+                                <input type="search" placeholder="Search..." class="search-input">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </form>
+                        </div>
+                        <li class="menu-item">
+                            <a href="#">Discover</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">playlist</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Artist</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right--nav">
+                    <div class="search-box">
+                        <form action="action-page.php">
+                            <input type="search" placeholder="Search..." class="search-input">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                    <div class="profile-box">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="profile-img"> 
+                            <img src="image/profile.png" alt="sky">
+                        </div>
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
+     <main class="main">
+        <div class="container">
+            <div class="music--content">
+                <div class="left-music-content">
+                    <div class="music-img">
+                        <img src="image/Aron-Afshar.jpg" alt="sky" class="music-image">
+                    </div>
+                    <div class="music-info">
+                        <audio src="musicPlayer/Aron Afshar - Delbare Shirin (320).mp3"></audio>
+                        <div class="songer-info">
+                            <h2 class="songer-name">Aron Afshar</h2>
+                            <span class="followers">96.7K followers</span>
+                        </div>
+                        <div class="music-name">Delber</div>
+                        <p class="songer-biography">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Aliquid quos repellendus 
+                            autem pariatur quam reprehenderit ex nesciunt 
+                            placeat illo doloribus. Dignissimos repellendus 
+                            explicabo minima! Autem, sit id? Incidunt, 
+                            aspernatur corrupti.
+                        </p>
+                        <div class="follow-btnss">
+                            <button class="playAll-btn">Play All</button>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="music-player">
+                            <div class="music-time">
+                                <span class="current-time">00:00</span>
+                                <span class="duration-time">00:00</span>
+                            </div>
+                            <div class="proccess-bar">
+                                <div class="dynamic-bar"></div>
+                            </div>
+                            <div class="music-control">
+                                <div class="player-icons">
+                                    <i class="fa-solid fa-backward-step"></i>
+                                    <i class="fa-solid fa-circle-play"></i>
+                                    <i class="fa-solid fa-forward-step"></i>
+                                </div>
+                                <div class="sound-div">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                    <input type="range" min="0" max="100" value="100" class="sound">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-music-content">
+                    <div class="album-title">
+                        <h2 class="album">Best Album</h2>
+                        <span class="view-all">View All</span>
+                    </div>
+                    <div class="album-list">
+                        <!-- <div class="misc-item">
+                            <div class="misc-info">
+                                <audio src="../media/musicPlayer/Aron Afshar - Delbare Shirin (320).mp3"></audio>
+                                <div class="misc-image">
+                                    <img src="../image/musicPlayer/Aron-Afshar.jpg" alt="sky" class="misc-img">
+                                </div>
+                                <div class="songer-misc">
+                                    <span class="misc-name">Aron Afshar</span>
+                                    <span class="misc-kind">Pop Artist</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+     </main>
+
+<script src="musicPlayer.js"></script>    
+</body>
+</html>
